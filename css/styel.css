@@ -1,0 +1,383 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr 0.5fr;
+   grid-template-areas: 
+   "phone phone learn-more learn-more"
+   "keyboard tv tv popular"
+   "games choise choise popular"
+   "twitter experience vision vision"
+   ;
+   min-height: 100vh;
+}
+.phone{
+background-color: #fff;
+grid-area: phone;
+display: flex;
+
+}
+.phone .phone-text{
+width: 50%;
+padding: 20px;
+}
+.phone .phone-text h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Arvo, sans-serif;
+    font-size:2rem;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.phone .phone-text span{
+ color: #9fa3a7;
+ font-family: Montserrat, sans-serif;
+ 
+}
+.phone .phone-text p{
+   color:  #9fa3a7;
+   font-size: 1.3rem;
+   font-family: Arvo, sans-serif;
+}
+.phone .phone-img{
+width: 50%;
+display: flex;
+}
+.phone .phone-img img{
+    max-width: 100%;
+    width: 70%;
+    display: block;
+    padding: flex;
+    padding-right: 4%;
+    padding-left: 4%;
+    justify-content: space-around;
+ 
+}
+.learn-more{
+background-color: rgb(221, 221, 221);
+grid-area: learn-more;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 40px;
+}
+.learn-more .learn-more-text span{
+    font-family: Arvo, sans-serif;
+    font-size: 2.8rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+margin-right: 50px;
+
+}
+.learn-more .learn-more-text p{
+    color: #9fa3a7;
+    padding-bottom: 20px;
+}
+.learn-more .learn-more-text ul li{
+    color: rgb(26, 216, 216);
+    grid-column-start: 3;
+    padding-top: 20px;
+    list-style: none;
+}
+.learn-more .learn-more-text u{
+    color: #35cfed;
+}
+.learn-more .learn-more-text:hover ul li{
+    cursor: pointer;
+}
+.keyboard{
+background-color:  #f05638;
+grid-area: keyboard;
+overflow: hidden;
+}
+.keyboard .keyboard-img img{
+    width: 100%;
+}
+.keyboard .keyboard-text {
+    text-align: center;
+}
+.keyboard .keyboard-text strong{
+    font-size: 2rem;
+    color: #fff;
+}
+.keyboard .keyboard-text ul li{
+    margin-top: 20px;
+    color: orange;
+}
+.keyboard .keyboard-text:hover ul li{
+    cursor: pointer;
+}
+.tv{
+background-color: #ffffff;
+grid-area: tv;
+display: flex;
+}
+.tv .tv-img{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.tv .tv-img img{
+    width: 125%;
+    transform: translate(-45%);
+}
+.tv .tv-text{
+    width: 50%;
+    
+}
+.tv .tv-img span{
+    text-align: center;
+    margin-top: 50px;
+    color: #9fa3a7;
+}
+.tv .tv-img h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.tv .tv-text p{
+    color: #9fa3a7;
+    text-align: center;
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    box-sizing: border-box;
+
+    display: block;
+    unicode-bidi: isolate;
+
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+    line-height: 1.8;
+
+    
+}
+.tv .tv-text ul li{
+    color: #35cfed;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -100px;
+    font-family:  sans-serif;
+    list-style: none;
+
+}
+.tv .tv-text:hover ul li{
+    cursor: pointer;
+}
+.popular{
+    background-color: #8f76bc;
+    grid-area: popular;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+}
+.popular .circle{
+    width: 350px;
+    height: 350px;
+    background-color: #8166b0;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.popular .circle h4{
+    margin-top: 20px;
+}
+
+
+.popular .circle img{
+    width: 60%;
+    display: flex;
+    margin-top: 100px;
+    
+   
+}
+.popular h3{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+.popular p{
+    width: 80%;
+    max-width: 290px;
+    line-height: 1.5;
+    font-size: large;
+}
+.popular button{
+    background-color: #ffc80a;
+    
+    margin-top: 30px;
+    padding: 14px 28px;
+    border-radius: 50px;
+
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+.games{
+background-color:#fff ;
+grid-area: games;
+overflow: hidden;
+}
+.games .games-img img{
+    width: 100%;
+    transform: translate(-15%);
+}
+.games h3{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Arvo, sans-serif;
+    font-size:2rem;
+    line-height: 32px;
+    font-weight: 400;
+}
+.games ul li{
+    text-align: center;
+    color: #35cfed;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.games:hover ul li{
+    cursor: pointer;
+}
+.choise{
+background-color: #93b6b7;
+grid-area: choise;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 20px 20px 0 20px;
+}
+.choise .choise-id{
+    color: #fff;
+    background-color: #fa684f;
+    width: 20%;
+    text-align: center;
+    border-radius: 4px;
+  
+}
+.choise .choise-text {
+    text-align: center;
+}
+.choise .choise-img img{
+    width: 100%;
+    display: block;
+transform: translate(-10%);
+}
+.twitter{
+background-color: #35cfed;
+grid-area: twitter;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: #fff;
+text-align: center;
+
+}
+.twitter .circle{
+    width: 200px;
+    height: 200px;
+    background-color: #039ebd;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.twitter .circle-img{
+    width: 60%;
+    display: flex;
+    margin-top: 100px;
+}
+.experience{
+ background-color:#fff ;
+ grid-area: experience; 
+}
+.experience button{
+   text-align: center;
+   width: 20%;
+   margin-top: 100px;
+   margin-left: 150px;
+   margin-right: 150px;
+    background-color: rgb(4, 187, 4);
+    border-radius:4px;
+    border: 1.5px;
+    border:rgb(4 , 187, 4);
+}
+.experience p{
+
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    unicode-bidi: isolate;
+text-align: center;
+}
+.vision{
+ background-color: #2c2c2c;
+ grid-area: vision;
+ overflow: hidden;
+}
+.vision .vision-img{
+    width: 40%;
+    float: left;
+}
+.vision .vision-img img{
+    width: 100%;
+
+}
+.vision .vision-text{
+    width: 50%;
+    float: right;
+    margin: bottom -200px;;
+}
+.vision .vision-text p{
+    text-align: center;
+   margin-top: 50px;
+    color: #fff;
+    font-family:'Courier New', Courier, monospace;
+    font-size:2rem;
+    line-height: 32px;
+    font-weight: bold;
+}
